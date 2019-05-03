@@ -9,3 +9,14 @@ C:\Users\Alvydas\CS\test\bin\Debug\netcoreapp2.2\test.dll
 C:\Users\Alvydas\CS\test\bin\Debug\netcoreapp2.2\test.pdb
 C:\Users\Alvydas\CS\test\obj\Debug\netcoreapp2.2\test.dll
 C:\Users\Alvydas\CS\test\obj\Debug\netcoreapp2.2\test.pdb
+C:\Users\alvydas\CS\CS-test\bin\Debug\netcoreapp2.2\test.deps.json
+C:\Users\alvydas\CS\CS-test\bin\Debug\netcoreapp2.2\test.runtimeconfig.json
+C:\Users\alvydas\CS\CS-test\bin\Debug\netcoreapp2.2\test.runtimeconfig.dev.json
+C:\Users\alvydas\CS\CS-test\bin\Debug\netcoreapp2.2\test.dll
+C:\Users\alvydas\CS\CS-test\bin\Debug\netcoreapp2.2\test.pdb
+C:\Users\alvydas\CS\CS-test\obj\Debug\netcoreapp2.2\test.csprojAssemblyReference.cache
+C:\Users\alvydas\CS\CS-test\obj\Debug\netcoreapp2.2\test.csproj.CoreCompileInputs.cache
+C:\Users\alvydas\CS\CS-test\obj\Debug\netcoreapp2.2\test.AssemblyInfoInputs.cache
+C:\Users\alvydas\CS\CS-test\obj\Debug\netcoreapp2.2\test.AssemblyInfo.cs
+C:\Users\alvydas\CS\CS-test\obj\Debug\netcoreapp2.2\test.dll
+C:\Users\alvydas\CS\CS-test\obj\Debug\netcoreapp2.2\test.pdb
