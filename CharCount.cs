@@ -4,7 +4,7 @@ namespace testApp
 {
     class  RepeatCharCount
     {
-// the odd 2ay
+// the odd one
         public void charCount(string testString)
         {
         Console.WriteLine("in charCnt: " + testString);
@@ -17,7 +17,7 @@ namespace testApp
             }
         }
 
-// the better way
+// the better one
         public int charArrayCount(string testString)
         {
             Console.WriteLine("in charArrayCount: " + testString);
