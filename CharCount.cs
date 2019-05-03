@@ -18,15 +18,23 @@ namespace testApp
         }
 
 // the better way
-        public void charArrayCount(string testString)
+        public int charArrayCount(string testString)
         {
             Console.WriteLine("in charArrayCount: " + testString);
 
             char[] testStringArray = testString.ToCharArray();
 
-            for(int i = 0; i < testStringArray.Length; i++){
-
+            int tempCount = 0;
+            int maxCount = 0;
+            for(int i = 0; i < testStringArray.Length - 1; i++){
+                if(testStringArray[i] == testStringArray[i+1]){
+                    tempCount++;
+                    maxCount = tempCount;
+                else{
+                    tempCount = 0;
+                }
             }
+            return maxCount;
         }
     }
 }
