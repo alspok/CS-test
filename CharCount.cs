@@ -26,8 +26,6 @@ namespace testApp
             int count = 1;
             int maxCount = 1;
 
-// aaaaaaaaaaaaaaaaaaaa = 20
-
             for(int i = 0; i < testStringArray.Length - 1; i++){
                 if(testStringArray[i] == testStringArray[i+1]){
                     count++;
