@@ -6,14 +6,14 @@ namespace testApp
     {
         static void Main()
         {
-            string testString = "acagtgacacagtgacgggggaaaaaaaaaaaaaaaattagacccc";
-            // Console.WriteLine(testString);
+            string testString = "acagtgacacagtgacgggggaaaaaaaaaaaaaaaaaaaattagacccc";
+            Console.WriteLine(testString);
 
             RepeatCharCount chrCnt = new RepeatCharCount();
-            chrCnt.charCount(testString);
+            // chrCnt.charCount(testString);
 
             int maxLength = chrCnt.charArrayCount(testString);
-            Console.WriteLine("in main " + maxLength);
+            Console.WriteLine("Max repeated char length " + maxLength);
         }
     }
 }
