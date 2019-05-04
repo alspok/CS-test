@@ -11,6 +11,7 @@ namespace testApp
 
             RepeatCharCount chrCnt = new RepeatCharCount();
             chrCnt.charCount(testString);
+            
             int maxLength = chrCnt.charArrayCount(testString);
             Console.WriteLine(maxLength);
         }

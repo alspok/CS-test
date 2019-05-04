@@ -14,6 +14,7 @@ namespace testApp
             tempChar = testString.Remove(1);
             Console.WriteLine(tempChar + " removed " + testString + "\n");
             testString = testString.Substring(1);
+            // here the calc...
             }
         }
 
@@ -24,17 +25,14 @@ namespace testApp
 
             char[] testStringArray = testString.ToCharArray();
 
-            int tempCount = 0;
+            int count = 0;
             int maxCount = 0;
             for(int i = 0; i < testStringArray.Length - 1; i++){
                 if(testStringArray[i] == testStringArray[i+1]){
-                    tempCount++;
-                    maxCount = tempCount;
-                else{
-                    tempCount = 0;
+                    count++;
                 }
             }
-            return maxCount;
+            return count;
         }
     }
 }
