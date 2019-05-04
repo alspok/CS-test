@@ -6,7 +6,7 @@ namespace testApp
     {
         static void Main()
         {
-            string testString = "acagtgacacagtgacgggggaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaattagacccc";
+            string testString = "acagtgacacagtgacgggggaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaattagacccc"; // 31
             Console.WriteLine(testString);
 
             
@@ -18,10 +18,11 @@ namespace testApp
             Console.WriteLine("Max repeated char length " + maxLength);
 
             string[] testStringArray = new string[]{
-                "aaaaaaaaaggggggggggg",
-                "agagagagggggggggggggggggggg",
-                "tttatatagacatt",
-                "gagaggggggagagcccacaccc"
+                "aaaaaaaaaggggggggggg", // 11
+                "agagagagggggggggggggggggggg", // 20
+                "tttatatagacatt", // 3
+                "gagaggggggagagcccacaccc", //6
+                "ttttttttttttttttttttttttttttttaaaaaaaaaaaaaaaaaaaa" //30
             };
 
             foreach(string testStr in testStringArray){
