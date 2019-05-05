@@ -35,6 +35,7 @@ namespace testApp
             Console.WriteLine("\n");
 
             /* gets List of most repeated char strings */
+            Console.WriteLine("Array of max repeated chars in string");
             List<Tuple<string, int>> maxStringArray = chrCnt.stringArrayCount(testStringArray);
             foreach(var tuple in maxStringArray){
                 Console.WriteLine(tuple.Item1.ToString() + " " + tuple.Item2.ToString());
