@@ -28,7 +28,7 @@ namespace testApp
             Console.WriteLine("Max repeated char length in string " + testString + " is " + maxLength + "\n");
 
             /* gets repeated substrings in strings array */
-            foreach(string testStr in testStringArray){
+            foreach(var testStr in testStringArray){
                 maxLength = chrCnt.charArrayCount(testStr);
                 Console.WriteLine("Max repeated char length in string array of string " + testStr + " is " + maxLength);
             }

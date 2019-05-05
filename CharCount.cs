@@ -65,12 +65,12 @@ namespace testApp
             List<Tuple<string, int>> repeatedList = new List<Tuple<string, int>>();
             string repeatChar;
 
-            foreach(string testString in testStringArray){
+            foreach(var testString in testStringArray){
                 int count = this.charArrayCount(testString);
                 repeatChar = testString.Substring(0, 1);
                 repeatedList.Add(Tuple.Create(repeatChar, count));
             }
-            
+
             return repeatedList;
         }
     }
