@@ -1,33 +1,35 @@
 using System;
+using System.Collections.Generic;
 
 namespace testApp
 {
     class  RepeatCharCount
     {
-// the odd one
+        /* calculates repeated string using Substring() */
         public void charCount(string testString)
         {
         Console.WriteLine("in charCnt: " + testString);
 
         string tempChar;
-        for(int i = 0; i < testString.Length; i++){
+        int strLength = testString.Length; 
+        for(int i = 0; i < strLength; i++){
             tempChar = testString.Remove(1);
-            Console.WriteLine(tempChar + " removed from " + testString + "\n");
+            Console.WriteLine(i + " "  + tempChar + " removed from " + testString + "\n");
             testString = testString.Substring(1);
             // here the calc...
             }
         }
 
-// the better one
+        /* calcutates repeated string using ToCharArray() */
         public int charArrayCount(string testString)
         {
-            char[] testStringArray = testString.ToCharArray();
+            char[] testCharArray = testString.ToCharArray();
 
             int count = 1;
             int maxCount = 1;
 
-            for(int i = 0; i < testStringArray.Length - 1; i++){
-                if(testStringArray[i] == testStringArray[i+1]){
+            for(int i = 0; i < testCharArray.Length - 1; i++){
+                if(testCharArray[i] == testCharArray[i+1]){
                     count++;
                 }
                 else{
@@ -39,6 +41,16 @@ namespace testApp
                 }
             }
             return maxCount;
+        }
+        /* makes List */
+        public List<Tuple<string, int>> stringArrayCount(string[] testStringArray)
+        {
+            List<Tuple<string, int>> stringList = new List<Tuple<string, int>>();
+
+            foreach(string testString in testStringArray){
+                int count = this.charArrayCount(testString);
+            }
+            return stringList;
         }
     }
 }
