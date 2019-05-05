@@ -5,22 +5,38 @@ namespace testApp
 {
     class  RepeatCharCount
     {
-        /* calculates repeated string using Substring() */
-        public void charCount(string testString)
+        /* calculates repeated chaar string using Substring() */
+        public int charCount(string testString)
         {
-        Console.WriteLine("in charCnt: " + testString);
+            // Console.WriteLine("in charCnt testString: " + testString);
 
-        string tempChar;
-        int strLength = testString.Length; 
-        for(int i = 0; i < strLength; i++){
-            tempChar = testString.Remove(1);
-            Console.WriteLine(i + " "  + tempChar + " removed from " + testString + "\n");
-            testString = testString.Substring(1);
-            // here the calc...
+            int strLength = testString.Length; 
+            int count = 1;
+            int maxCount = 1;
+
+            for(int i = 0; i < strLength - 1; i++){
+                string subString1 = testString.Substring(0, 1);
+                string subString2 = testString.Substring(1, 1);
+                
+                if(subString1 == subString2){
+                    count++;
+                }
+                else{
+                    count = 1;
+                }
+
+                if(count > maxCount){
+                    maxCount = count;
+                }
+
+            testString = testString.Remove(0, 1);
+            // Console.WriteLine(i + " "  + testString + " removed from " + testString + "\n");
             }
+
+            return maxCount;
         }
 
-        /* calcutates repeated string using ToCharArray() */
+        /* calcutates repeated char string using ToCharArray() */
         public int charArrayCount(string testString)
         {
             char[] testCharArray = testString.ToCharArray();
@@ -42,15 +58,20 @@ namespace testApp
             }
             return maxCount;
         }
-        /* makes List */
+
+        /* makes List of repeaded strings in string array*/
         public List<Tuple<string, int>> stringArrayCount(string[] testStringArray)
         {
-            List<Tuple<string, int>> stringList = new List<Tuple<string, int>>();
+            List<Tuple<string, int>> repeatedList = new List<Tuple<string, int>>();
+            string repeatChar;
 
             foreach(string testString in testStringArray){
                 int count = this.charArrayCount(testString);
+                repeatChar = testString.Substring(0, 1);
+                repeatedList.Add(Tuple.Create(repeatChar, count));
             }
-            return stringList;
+            
+            return repeatedList;
         }
     }
 }
